@@ -1,0 +1,66 @@
+@import "mediaqueries.css";
+@import "navfooter.css";
+
+.container {
+    display: grid;
+    height: 100vh;
+    margin: 0px;
+    background-color: rgba(88, 124, 159, 100);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 3.2fr 0.6fr 0.4fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "content1"
+    "footer"
+    ;
+}
+
+header {
+    grid-area: header;
+    padding: 1rem;
+}
+
+nav a {
+    display: none;
+    color: white;
+    padding: 1rem 1.5rem;
+}
+
+#menu-checkbox {
+    display: hi;
+} 
+
+nav {
+    position: relative;
+    color: #587C9F;
+}
+
+#menu-checkbox:checked ~ nav a {
+    display: block;
+}
+
+#logo {
+    padding: 50 10px;
+    
+}
+
+main {
+    grid-area: main;
+    background-image: url(/images/mobilebackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content1 {
+    grid-area: content1;
+    background-color: #587C9F
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    color: gray;
+    text-align: center;
+}
