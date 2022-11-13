@@ -6,8 +6,7 @@
     height: 100vh;
     margin: 0px;
     background-color: rgba(88, 124, 159, 100);
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 3.2fr 0.6fr 0.4fr;
+    grid-template-rows: 0.5fr 3.2fr 0.6fr 0.4fr;
     grid-template-areas:
     "header"
     "main"
@@ -18,31 +17,33 @@
 
 header {
     grid-area: header;
+    position: relative;
+    background-color: #587C9F;
     padding: 1rem;
 }
 
 nav a {
-    display: none;
+    display: block;
+    background-color: #587C9F;
     color: white;
     padding: 1rem 1.5rem;
+    text-decoration: none;
 }
 
 #menu-checkbox {
-    display: hi;
+    display: none;
 } 
 
 nav {
-    position: relative;
+    display: none;
+    position: absolute;
+    margin: 0px;
     color: #587C9F;
+    left: 0px;
 }
 
-#menu-checkbox:checked ~ nav a {
+#menu-checkbox:checked ~ nav {
     display: block;
-}
-
-#logo {
-    padding: 50 10px;
-    
 }
 
 main {
