@@ -1,5 +1,22 @@
+@import "mediaqueries.css";
+@import "navfooter.css";
+
 * {
 	font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	margin: 0px;
+	background-color: rgba(88, 124, 159, 100);
+    grid-template-columns: 1fr;
+	grid-template-rows: 10% 70% 1fr 1fr;
+	grid-template-areas:
+		"header"
+		"main"
+		"content1"
+		"footer";
 }
 
 header {
@@ -15,6 +32,7 @@ nav a {
 	color: white;
 	padding: 1rem 1.5rem;
 	text-decoration: none;
+    ;
 }
 
 #menu-checkbox {
@@ -38,4 +56,5 @@ footer {
 	background-color: black;
 	color: gray;
 	text-align: center;
+    padding-bottom: 10px;
 }

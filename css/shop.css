@@ -10,7 +10,7 @@
 	height: 100vh;
 	margin: 0px;
 	background-color: rgba(88, 124, 159, 100);
-	grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 	grid-template-rows: 10% 70% 1fr 1fr;
 	grid-template-areas:
 		"header"
@@ -32,6 +32,7 @@ nav a {
 	color: white;
 	padding: 1rem 1.5rem;
 	text-decoration: none;
+    ;
 }
 
 #menu-checkbox {
@@ -50,29 +51,38 @@ nav {
 	display: block;
 }
 
-main {
-	grid-area: main;
-	background-image: url(/images/mobilebackground.jpg);
-	background-size: cover;
-	background-color: #0f2133;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-
-.content1 {
-	grid-area: content1;
-	background-color: #587c9f;
-	font-size: 2rem;
-	display: flex;
-	flex-direction: row;
-	align-self: center;
-	place-content: center;
-}
-
 footer {
 	grid-area: footer;
 	background-color: black;
 	color: gray;
 	text-align: center;
-	padding-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.description {
+    padding: 10px;
+    margin: 0px;
+}
+
+.revdescription {
+    padding: 10px;
+    margin: 0px;
+}
+#redjacket1 {
+    max-width: 100%;
+    height: 120px;
+    
+}
+
+#revredjacket {
+    max-width: 100%;
+    height: 120px;
+    
 }

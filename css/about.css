@@ -1,5 +1,21 @@
+@import "mediaqueries.css";
+@import "navfooter.css";
+
 * {
 	font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+	display: grid;
+	height: 100vh;
+	margin: 0px;
+	background-color: rgba(88, 124, 159, 100);
+	grid-template-columns: 1fr;
+	grid-template-rows: 10% 1fr 10%;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
 }
 
 header {
@@ -38,4 +54,11 @@ footer {
 	background-color: black;
 	color: gray;
 	text-align: center;
+	padding-bottom: 10px;
+}
+
+.abouttext {
+	padding: 1rem;
+	color: white;
+	font-weight: 100;
 }
