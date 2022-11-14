@@ -23,10 +23,28 @@
         </nav>
     </header>
     <main>
-        <a href="productinfo.html"><img id="redjacket1" src="./images/red_jacket.png" alt="Red Jacket"></a>
-        <h3>Red Jacket</h3>
+        <img class="redjacket1" src="./images/big_red_jacket.png" alt="Red Jacket">
+        <h3 class="redjacket1">Red Jacket</h3>
         <p>460,00 NOK</p>
-        <div>make a form for color and a form for size</div>
+        <label for="colour">Colour :</label>
+        <select name="colour">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+        </select>
+        <br>
+        <label for="size">Size :</label>
+        <select name="size" id="size123">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+        </select>
+        <a class="purchase" href="checkout.html">Buy Now</a>
     </main>
     <footer>
         <p>Rainy Days Ltd. | Yusuf Muzaffarov</p>
