@@ -21,6 +21,7 @@ header {
 	position: relative;
 	background-color: #587c9f;
 	padding: 1rem;
+	font-size: 1.5rem;
 }
 
 nav a {
@@ -55,7 +56,8 @@ footer {
 	padding-bottom: 10px;
 }
 
-.products {
+main {
+	grid-area: main;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -99,20 +101,36 @@ main h1 {
 	}
 
 	header {
-		background-color: #0f2133;
+		background-color: #6d869e;
 	}
 
 	nav {
-		display: block;
+		display: flex;
 		position: static;
 		font-size: 2rem;
+		flex-direction: row;
+		gap: 2rem;
+		margin-left: 1rem;
+		justify-content: flex-start;
 	}
 
 	nav a {
 		display: inline-block;
+		border-radius: 10px;
+	}
+
+	.rainydayslogo {
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 1rem 2.5rem;
 	}
 
 	.checkbutton {
 		display: none;
+	}
+
+	main {
+		font-size: 3rem;
 	}
 }
